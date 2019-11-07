@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Igor Varekhov](https://up.htmlacademy.ru/adaptive/18/user/858513).
-* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic). 
 
 ---
 
