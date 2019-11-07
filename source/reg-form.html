@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
+    <header class="main-header">
+
+      <div class="logo header__logo">
+        <a class="logo__link" href="index.html">
+          <img src=""
+               alt="Pink логотип"
+               width=""
+               height="">
+        </a>
+      </div>
+
+      <button class="button
+                     button--burger"
+               type="button">Навигационное меню
+      </button>
+
+    </header>
+
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="photo.html" >фотографии</a></li>
+        <li class="nav__item"><a class="nav__link" href="">конкурс</a></li>
+        <li class="nav__item"><a class="nav__link" href="">html academy</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="intro">
+        <p class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+      <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+
+      <form class="reg-form" action="" method="">
+
+        <ol class="reg-form__list">
+          <li class="reg-form__item">
+
+            <fieldset class="user-info">
+              <p>
+                <label for="surname">Фамилия:</label>
+                <input id="surname"
+                       type="text"
+                       name="surname"
+                       placeholder="Укажите фамилию *">
+              </p>
+
+              <p>
+                <label for="name">Имя:</label>
+                <input id="name"
+                       type="text"
+                       name="name"
+                       placeholder="Введите ваше имя *">
+              </p>
+
+              <p>
+                <label for="patronymic">Отчество:</label>
+                <input id="patronymic"
+                       type="text"
+                       name="patronymic"
+                       placeholder="Ну и отчество тоже">
+              </p>
+
+            </fieldset>
+          </li>
+
+
+          <li class="reg-form__item">
+
+             <fieldset class="user-progress">
+                <legend>Ваши безбашенные достижения в путишествии</legend>
+
+                <p>
+                  <label for="selfie">Сделал селфи с акулой</label>
+                  <input id="selfie"
+                         name="self"
+                         type="checkbox"
+                         checked>
+                </p>
+
+                <p>
+                  <label for="sunburn">Обгорел на пляже</label>
+                  <input id="sunburn"
+                         name="sunburn"
+                         type="checkbox"
+                         checked>
+                </p>
+
+                <p>
+                  <label for="norris">Видел Чака Норриса</label>
+                  <input id="norris"
+                         name="norris"
+                         type="checkbox">
+                </p>
+
+                <p>
+                  <label for="gift">Накупил сувениров</label>
+                  <input id="gift"
+                         name="gift"
+                         type="checkbox">
+                </p>
+
+                <p>
+                  <label for="selfie">Сделал селфи с акулой</label>
+                  <input id="selfie"
+                         name="self"
+                         type="checkbox"
+                         checked>
+                </p>
+
+                <p>
+                  <label for="tower">Удержал башню</label>
+                  <input id="tower"
+                         name="tower"
+                         type="checkbox"
+                         checked>
+                </p>
+
+                <p>
+                  <label for="destroy">Разгромил отель</label>
+                  <input id="destroy"
+                         name="destroy"
+                         type="checkbox">
+                </p>
+
+             </fieldset>
+          </li>
+
+
+          <li class="reg-form__item">
+
+            <fieldset class="user-contact">
+              <legend  class="visually-hidden">Адрес и почта</legend>
+              <p>
+                <label for="tel">Номер телефона</label>
+                <input id="tel"
+                       name="tel-num"
+                       type="tel"
+                       placeholder="Номер, пожалуйста">
+              </p>
+
+              <p>
+                <label for="email">Адрес почты</label>
+                <input id="email"
+                       name="tel-num"
+                       type="email"
+                       placeholder="Введите почту *">
+              </p>
+            </fieldset>
+
+          </li>
+
+
+          <li class="reg-form__item">
+            <fieldset class="user-app">
+              <legend>С каким приложением путишествовали?</legend>
+
+              <p>
+                <label for="ios">Pink для iOS</label>
+                <input id="ios"
+                       type="radio"
+                       name="device"
+                       checked>
+              </p>
+
+              <p>
+                <label for="android">Pink для Android</label>
+                <input id="android"
+                       type="radio"
+                       name="device">
+              </p>
+
+              <p>
+                <label for="windows">Windows Phone</label>
+                <input id="windows"
+                       type="radio"
+                       name="device">
+              </p>
+
+            </fieldset>
+          </li>
+
+          <li class="reg-form__item">
+            <fieldset class="user-emotion">
+              <legend>Опишите свои эмоции</legend>
+
+              <p>
+                <label for="user-descrip"></label>
+                <textarea id="user-descrip"
+                          name="user-descrip"
+                          cols="30"
+                          rows="10">Можно прям вкрасках,не стесняясь в ввыражениях
+                </textarea>
+              </p>
+
+            </fieldset>
+
+          </li>
+        </ol>
+
+        <button class="button
+                       button--submit"
+                type="submit">Отправить форму
+        </button>
+
+      </form>
+    </main>
+
+
+    <footer class="main-footer ">
+      <h2 class="visually-hidden">Дополнительная информация о нас</h2>
+
+      <div class="main-footer__logo">
+      </div>
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--twitter"
+             href="">twitter
+          </a>
+        </li>
+
+
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--facebook"
+            href="">facebook
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--youtube"
+             href="">youtube
+          </a>
+        </li>
+      </ul>
+
+      <div class="copyright main-footer__copyright">
+        <span class="copyright__text"></span>
+        <a class="copyright__link" href="">htmlacademy</a>
+      </div>
+    </footer>
+  </body>
+</html>
