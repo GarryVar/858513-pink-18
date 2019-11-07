@@ -173,38 +173,70 @@
           <div class="upload">
             <form class="upload__form" action="" method="post">
 
-              <fieldset>
+              <div class="upload__img">
+                <img class="upload__pic"
+                     src=""
+                     alt="Зимняя дорога"
+                     width=""
+                     height="">
+              </div>
 
-                <div class="upload__img">
-                  <img class="upload__pic"
-                       src=""
-                       alt="Зимняя дорога"
-                       width=""
-                       height="">
-                </div>
+              <ol class="upload__option">
+                <li class="upload__option-item">
 
-                <ol class="upload__option">
-                  <li class="upload__option-item">
-                    <button class="button upload__option--crop" type="button">Обрезать</button>
-                  </li>
+                  <button class="button
+                                 upload__option--crop"
+                          type="button">Обрезать
+                  </button>
 
-
-                  <li class="upload__option-item">
-                    <button class="button upload__option--bucket">Залить цветом</button>
-                  </li>
+                </li>
 
 
-                  <li class="upload__option-item">
-                    <button class="button upload__option--brightness">Яркость</button>
-                  </li>
+                <li class="upload__option-item">
 
-                  <li class="upload__option-item">
-                    <label>
-                      <input type="range">
-                    </label>
-                  </li>
-                </ol>
-              </fieldset>
+                  <button class="button
+                                 upload__option--bucket"
+                          type="button">Залить цветом
+                  </button>
+
+                </li>
+
+
+                <li class="upload__option-item">
+
+                  <button class="button
+                                 upload__option--brightness"
+                          type="button">Яркость
+                  </button>
+
+                </li>
+
+                <li class="upload__option-item">
+                  <label>
+                    <input type="range">
+                  </label>
+                </li>
+              </ol>
+
+
+              <ul class="post-submit upload__post-submit">
+                <li class="post-submit__item">
+                  <button class="button
+                                 post-submit__button"
+                          type="button">Запостить
+                  </button>
+                </li>
+
+
+                <li class="post-submit__item">
+                  <button class="button
+                                 post-submit__button
+                                 post-submit__button--disabled"
+                          type="button">Отмена
+                  </button>
+                </li>
+              </ul>
+
             </form>
 
           </div>
@@ -213,7 +245,40 @@
 
     </main>
 
-    <div class="main-footer "></div>
+    <footer class="main-footer ">
+
+      <div class="main-footer__logo">
+      </div>
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--twitter"
+             href="">twitter
+          </a>
+        </li>
+
+
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--facebook"
+            href="">facebook
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a class="social-list__link
+                    social-list__link--youtube"
+             href="">youtube
+          </a>
+        </li>
+      </ul>
+
+      <div class="copyright main-footer__copyright">
+        <span class="copyright__text"></span>
+        <a class="copyright__link" href="">htmlacademy</a>
+      </div>
+    </footer>
 
   </body>
 </html>
