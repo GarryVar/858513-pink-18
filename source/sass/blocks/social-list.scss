@@ -31,4 +31,17 @@
   path {
     fill: $primary-pink;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-dark-blue;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+
+    path {
+      fill-opacity: 0.30;
+    }
+  }
 }
