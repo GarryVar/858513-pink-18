@@ -1,0 +1,14 @@
+.tariff__price-list {
+  display: flex;
+
+  min-width: 100%;
+  overflow: hidden;
+
+  @include list-reset;
+}
+
+.tariff__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

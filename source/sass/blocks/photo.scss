@@ -1,0 +1,23 @@
+.photo__user {
+  @include list-reset;
+
+  position: relative;
+}
+
+.photo__upload {
+  padding-top: 21px;
+  padding-bottom: 41px;
+
+  background-color: $bg-color;
+}
+
+.photo__text {
+  padding: 48px 0;
+  margin: auto;
+
+  width: 80%;
+
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}

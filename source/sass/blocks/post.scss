@@ -1,0 +1,27 @@
+.post__btn {
+  @include button-reset;
+
+  padding: 13px 0;
+
+  width: 100%;
+
+  border: solid 3px $primary-pink;
+  border-radius: 50px;
+  color: $primary-pink;
+  font-size: 18px;
+  font-weight: bold;
+
+    &--disabled {
+      color: #dddfe0;
+
+      border: solid 3px #dddfe0;
+    }
+}
+
+.post__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

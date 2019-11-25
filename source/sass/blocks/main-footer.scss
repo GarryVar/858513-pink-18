@@ -1,0 +1,18 @@
+.main-footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 45px;
+}
+
+
+.main-footer__logo {
+  margin-bottom: 40px;
+}
+
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}

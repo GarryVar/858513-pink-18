@@ -1,0 +1,88 @@
+.intro {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -70px;
+  background-color: $primary-dark-blue;
+
+  &--closed {
+    background-position-y: 4px;
+  }
+
+  &--photo {
+    min-height: 356px;
+  }
+}
+
+.intro__wrap {
+  position: relative;
+
+  min-height: 356px;
+}
+
+.intro__slogan {
+  padding-top: 34px;
+  margin: 0;
+
+
+  color: $white-color;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+
+  &--closed {
+    padding-top: 100px;
+  }
+}
+
+.intro__legend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  width: 320px;
+  min-height: 185px;
+
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+
+  background-color: #ffffff;
+
+    p {
+      margin: 0;
+    }
+}
+
+.intro__pic {
+  margin-top: 38px;
+}
+
+.intro__download-block {
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+
+.intro__brands-list {
+  @include list-reset;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 12px;
+
+  font-size: 0;
+}
+
+.intro__text {
+  margin: 0;
+  margin-top: 16px;
+
+  line-height: 24px;
+  color: $white-color;
+  font-size: 14px;
+  text-align: center;
+}

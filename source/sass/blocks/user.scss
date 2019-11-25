@@ -1,0 +1,82 @@
+.user__item {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  &:last-hild {
+    margin-bottom: 0;
+  }
+
+  &--sign::before {
+    position: absolute;
+    top:0;
+    right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    content: "панормама дня";
+
+    width: 140px;
+    height: 36px;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: $primary-pink;
+  }
+}
+
+.user__block {
+  padding: 25px 18px;
+
+  color: $text-color;
+  font-size: 14px;
+
+  background-color: #f2f2f2;
+}
+
+.user__name {
+  display: inline-block;
+  vertical-align: middle;
+
+  color: $text-color;
+
+  margin: 0;
+}
+
+.user__time {
+  color: #a8abaf;
+}
+
+.user__comment {
+  color: $text-color;
+}
+
+
+.user__like {
+  position: relative;
+
+  padding-left: 33px;
+
+  color: $primary-pink;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top:0;
+    left: 0;
+
+    content: "";
+
+    width: 13px;
+    height: 13px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
