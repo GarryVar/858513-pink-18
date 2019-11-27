@@ -9,6 +9,26 @@
 
 .main-footer__logo {
   margin-bottom: 40px;
+
+  cursor: pointer;
+
+    &:hover,
+    &:focus {
+      g {
+        fill: $primary-pink;
+      }
+    }
+
+    &:active {
+      g {
+        fill: #283645;
+        fill-opacity: 0.30;
+      }
+
+      path {
+        fill-opacity: 0.30;
+      }
+    }
 }
 
 
