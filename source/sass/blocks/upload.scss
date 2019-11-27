@@ -25,7 +25,7 @@
     }
 
     &:hover,
-      &:focus {
+    &:focus {
         .svg {
           fill: $primary-pink;
         }
@@ -34,14 +34,32 @@
 
 .upload__bucket {
   @include button-reset;
+
+  &:focus {
+    .svg {
+      fill: $primary-pink;
+    }
+  }
 }
 
 .upload__crop {
   @include button-reset;
+
+  &:focus {
+    .svg {
+      fill: $primary-pink;
+    }
+  }
 }
 
 .upload__brightness {
   @include button-reset;
+
+  &:focus {
+    .svg {
+      fill: $primary-pink;
+    }
+  }
 }
 
 .upload__range {
