@@ -1,63 +1,18 @@
 .page-header {
-  background-color: $primary-blue;
 
-  &--toggle {
-    @include button-reset;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    margin-right: 20px;
+    padding-left:   20px;
+    padding-right: 20px;
 
-    &:hover,
-    &:focus {
-      path {
-        fill: $primary-pink;
-      }
-    }
-
-    &:active {
-      path {
-        fill-opacity: 0.30;
-      }
-    }
+    min-height: 72px;
+    max-height: 325px;
   }
 
-  &--closed {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-
-    min-height: 66px;
-    background-color: $primary-blue-opacity;
+  &--bg-blue {
+    background-color: $primary-blue;
   }
-}
-
-.page-header__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  padding-top: 23px;
-}
-
-.page-header__link {
-  margin-left: 20px;
-
-  &:hover,
-  &:focus {
-    path {
-      fill: $primary-pink;
-    }
-  }
-
-  &:active {
-    path {
-      fill: #ffffff;
-      fill-opacity: 0.30;
-    }
-  }
-}
-
-
-.page-header__main-nav {
-  width: 100%;
 }
