@@ -1,18 +1,59 @@
 .page-header {
 
-  &__inner {
+  &--bg-blue {
+    background-color: $primary-blue;
+  }
+
+  .page-header__inner {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding-left:   20px;
-    padding-right: 20px;
+    padding-top: 20px;
+    // padding-bottom: 20px;
 
     min-height: 72px;
     max-height: 325px;
   }
 
-  &--bg-blue {
-    background-color: $primary-blue;
+  .page-header__link {
+      display: flex;
+      align-items: center;
+      flex-basis:   50%;
+
+      margin-left: 20px;
+
+      font-size: 0;
+  }
+
+  .page-header__toggle {
+    position: relative;
+
+    margin-right: 20px;
+    padding: 0;
+
+    width: 36px;
+    height: 36px;
+
+
+    background-color:   transparent;
+    border: none;
+    cursor: pointer;
+
+    &--close {
+      width: 36px;
+      height: 36px;
+
+      background-image: url("../img/icon-menu-cross.svg");
+      background-size: 24px 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .page-header__main-nav {
+    position: relative;
   }
 }
