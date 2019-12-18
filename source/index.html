@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d22856">
+    <meta name="msapplication-TileColor" content="#d22856">
+    <meta name="theme-color" content="#d22856">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body class="page-index">
 
@@ -47,12 +55,22 @@
       </div>
     </header>
 
-  <!--   <main class="page-main">
+    <main class="page-main">
       <h1 class="visually-hidden">Pink - это мобильное приложение для раскрашивания изображений</h1>
         <div class="intro page-main__intro">
           <div class="intro__wrap">
-            <p class="intro__slogan">Взгляните &nbsp;на &nbsp;жизнь &nbsp;иначе!</p>
-            <img class="intro__pic" src="img/iphone-hand-mobile@1x.png" alt="Рука с мобильным телефоном" width="258" height="286">
+            <p class="intro__slogan">Взгляните на жизнь иначе!</p>
+            <div class="intro__picture">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp">
+                <img class="intro__pic"
+                  src="img/iphone-hand-mobile@1x.png"
+                  srcset="img/iphone-hand-mobile@1x.png 2x"
+                  alt="Рука с мобильным телефоном"
+                  width="258"
+                  height="286">
+              </picture>
+            </div>
             <div class="intro__download-block">
               <div class="container">
                 <button class="button button--download" type="button">Скачать приложение</button>
@@ -87,7 +105,7 @@
           </div>
         </div>
 
-        <section class="features page-main__features">
+      <!--   <section class="features page-main__features">
           <h2 class="visually-hidden">Преимущества нашего приложения</h2>
           <div class="features__wrap">
             <div class="container">
@@ -217,7 +235,7 @@
               <iframe src="https://yandex.ru/map-widget/v1/-/CGXVu6mr" width="560" height="215"></iframe>
             </div>
           </div>
-        </section>
-    </main> -->
+        </section> -->
+    </main>
   </body>
 </html>
