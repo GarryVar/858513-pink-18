@@ -1,0 +1,41 @@
+.tariff {
+
+  &__inner {
+    @include flex-vertical;
+  }
+
+  &__price-list {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  &__price-list-item {
+    @include flex-vertical;
+
+    min-width: 100%;
+  }
+
+  &__price-list-header {
+    margin: 0;
+
+    width: 100%;
+    // min-height: 100px;
+
+    color: $main-white;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+
+    // background-color: $primary-dark-blue;
+  }
+
+  &__price-list-cost {
+    margin: 0;
+  }
+}

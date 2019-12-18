@@ -1,0 +1,28 @@
+.brands {
+
+  .brands__list {
+    @include list-reset;
+
+    display: flex;
+    align-items:  center;
+    justify-content:  space-evenly;
+
+    margin-top: 33px;
+  }
+
+  .brands__list-item {
+    @include transition;
+    flex-basis: auto;
+    min-height: 56px;
+
+        &:hover,
+        &:focus {
+          @include transition;
+          transform: scale(1.1);
+        }
+  }
+
+  .brands__list-link {
+    font-size: 0;
+  }
+}
