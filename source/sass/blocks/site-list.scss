@@ -1,34 +1,26 @@
-.site-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.site-list {
 
-  min-height: 62px;
+  .site-list__item {
+    @include flex-vertical;
 
-  border-top: solid 1px #485461;
-  border-bottom: solid 1px #000000;
-}
+    justify-content: center;
 
-.site-list__link {
-  display: block;
-
-  padding: 0;
-
-  color: $white-color;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include links-reset;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    color: $primary-pink;
+    min-height: 62px;
+    border-top: solid 1px #485461;
+    border-bottom: solid 1px #000000;
   }
 
-  &:active {
-    color: #d2285680;
-  }
+  .site-list__link {
+    @include link-reset;
+
+    color: $main-white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: $primary-pink;
+      }
+    }
 }
