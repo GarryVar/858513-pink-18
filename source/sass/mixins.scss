@@ -55,6 +55,15 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &:hover,
+    &:focus {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      background-color: #e9ebec;
+    }
 }
 
 

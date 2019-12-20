@@ -49,7 +49,12 @@
 
       &:hover,
       &:focus {
+        color: $primary-dark-blue;
         text-decoration: underline;
+      }
+
+      &:active {
+        color: #bec2c7;
       }
   }
 

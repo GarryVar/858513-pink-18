@@ -32,6 +32,12 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline-offset: 2px;
+  outline-style: dotted;
+  outline-color: lightblue;
+}
+
 body {
   margin: 0;
   width: 320px;
