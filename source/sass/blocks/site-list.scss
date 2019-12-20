@@ -3,9 +3,12 @@
   .site-list__item {
     @include flex-vertical;
 
+    padding-top: 19px;
+    padding-bottom: 19px;
+
     justify-content: center;
 
-    min-height: 62px;
+    max-height: 62px;
     border-top: solid 1px #485461;
     border-bottom: solid 1px #000000;
   }

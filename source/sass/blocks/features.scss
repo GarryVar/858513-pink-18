@@ -55,7 +55,8 @@
   }
 
   .features__img {
-    position: absolute;
+    @include transform-center;
+
     top: 8px;
   }
 }

@@ -1,7 +1,7 @@
 .review {
 
   &--bg-gradient {
-    background: linear-gradient(174deg, white 74%, #f2f2f2 10%);
+    background: linear-gradient(175deg, white 80%, #f2f2f2 10%);
   }
 
   .review__inner {
@@ -22,8 +22,6 @@
   }
 
   .review__list-item {
-    @include flex-vertical;
-
     margin-right: 40px;
 
     min-width: 100%;
@@ -34,6 +32,7 @@
     margin-bottom: 16px;
 
     font-size: 18px;
+    text-align: center;
   }
 
   .review__list-text {
@@ -45,30 +44,13 @@
   }
 
   .review__toggles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @include slider;
   }
 
   .review__toggle {
     @include button-reset;
-
-    margin-right: 15px;
-    width: 7px;
-    height: 7px;
-
-    border-radius: 50%;
-    background-color: $gray-border;
-
-      &--current {
-        width: 12px;
-        height: 12px;
-        border: solid 3px $primary-dark-blue;
-        background-color: $main-white;
-      }
-
-    &:last-child {
-      margin-right: 0;
-    }
+    @include slider-options;
   }
 }
+
+
