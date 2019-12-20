@@ -41,16 +41,6 @@
     background-color:   transparent;
     border: none;
     cursor: pointer;
-
-    &--close {
-      width: 36px;
-      height: 36px;
-
-      background-image: url("../img/icon-menu-cross.svg");
-      background-size: 24px 24px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
   }
 
   .page-header__main-nav {
