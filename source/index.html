@@ -5,14 +5,13 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#eeeeee">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d22856">
+    <meta name="msapplication-TileColor" content="#d22856">
+    <meta name="theme-color" content="#d22856">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
     <body class="page-index">
 
@@ -170,8 +169,10 @@
               <ol class="tariff__price-list slider__list">
 
                 <li class="tariff__price-list-item slider__item">
-                  <h3 class="tariff__price-list-header">База</h3>
-                  <p class="tariff__price-list-cost"><strong>1,99 usd</strong></p>
+                  <div class="tariff__price-list-caption">
+                    <h3 class="tariff__price-list-header">База</h3>
+                    <p class="tariff__price-list-cost">1,99 usd</p>
+                  </div>
                   <ol class="tariff__advantage">
                     <li class="tariff__advantage-item">Розовый фильтр</li>
                     <li class="tariff__advantage-item">Смайлики</li>
@@ -181,8 +182,10 @@
 
 
                 <li class="tariff__price-list-item slider__item">
-                  <h3 class="tariff__price-list-header">Стандарт</h3>
-                  <p class="tariff__price-list-cost"><strong>3,99 usd</strong></p>
+                  <div class="tariff__price-list-caption">
+                    <h3 class="tariff__price-list-header">Стандарт</h3>
+                    <p class="tariff__price-list-cost">3,99 usd</p>
+                  </div>
                   <ol class="tariff__advantage">
                     <li class="tariff__advantage-item">Розовый фильтр</li>
                     <li class="tariff__advantage-item">Смайлики</li>
@@ -191,9 +194,11 @@
                 </li>
 
 
-                <li class="tariff__price-list__item slider__item">
-                  <h3 class="tariff__price-list__title">Анлим</h3>
-                  <p class="tariff__price-list__cost"><strong>9,99 usd</strong></p>
+                <li class="tariff__price-list-item slider__item">
+                  <div class="tariff__price-list-caption">
+                    <h3 class="tariff__price-list-header">Анлим</h3>
+                    <p class="tariff__price-list-cost">9,99 usd</p>
+                   </div>
                   <ol class="tariff__advantage">
                     <li class="tariff__advantage-item">Розовый фильтр</li>
                     <li class="tariff__advantage-item">Смайлики</li>
@@ -202,19 +207,19 @@
                 </li>
               </ol>
 
-              <div class="slider__toggle-group">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle slider__toggle--current" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
+              <div class="tariff__toggles slider__toggles">
+                <button class="tariff__toggle slider__toggle" type="button">1</button>
+                <button class="tariff__toggle slider__toggle tariff__toggle--current" type="button">2</button>
+                <button class="tariff__toggle slider__toggle" type="button">3</button>
               </div>
             </div>
           </section>
 
-<!--           <section class="contacts page-main__contacts">
+          <section class="contacts page-main__contacts">
             <h2 class="visually-hidden">Наши контакты</h2>
-            <div class="contacts__inner">
-              <div class="wrapper">
-                <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+            <div class="wrapper">
+              <div class="contacts__inner">
+                <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
                 <ul class="contacts__list">
                   <li class="contacts__list-item">
                     <h3 class="contacts__list-title">Звоните:</h3>
@@ -232,11 +237,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="contacts__map">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CGXVu6mr" width="560" height="215"></iframe>
-              </div>
             </div>
-          </section>  -->
+            <div class="contacts__map">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CGtN5SyV"
+                    width="560"
+                    height="215">
+              </iframe>
+          </section>
       </main>
     </body>
 </html>
