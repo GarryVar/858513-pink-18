@@ -3,6 +3,7 @@
   &--bg-blue {
     background-color: $primary-blue;
   }
+}
 
   .page-header__inner {
     position: relative;
@@ -45,5 +46,11 @@
 
   .page-header__main-nav {
     position: relative;
+
+    flex-grow: 1;
+
+    margin-top: 18px;
+
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #485461;
   }
-}

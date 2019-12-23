@@ -3,6 +3,7 @@
   &--bg-gray {
     background-color: $bg-color;
   }
+}
 
   .tariff__inner {
     @include flex-vertical;
@@ -91,4 +92,3 @@
     @include slider-options;
   }
 
-}
