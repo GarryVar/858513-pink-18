@@ -1,16 +1,4 @@
-.main-nav {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-
-  margin-top: 18px;
-
-  border-top: solid 1px #000000;
-  border-bottom: solid 1px #485461;
-
-  transform: translateX(-50%);
-
-    .main-nav__site-list {
-      @include list-reset;
-    }
+.main-nav__site-list {
+  @include list-reset;
+  @include flex-vertical;
 }

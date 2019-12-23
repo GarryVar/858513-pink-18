@@ -1,6 +1,5 @@
-.contacts {
 
-  .contacts__inner {
+ .contacts__inner {
     @include flex-vertical;
 
     padding-top: 44px;
@@ -110,4 +109,4 @@
       }
 
   }
-}
+

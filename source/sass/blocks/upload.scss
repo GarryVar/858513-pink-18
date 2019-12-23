@@ -1,0 +1,44 @@
+.upload {
+
+  &--bg-gray {
+    margin-top: 36px;
+
+    background-color: $bg-color;
+  }
+
+}
+
+  .upload__inner {
+    @include flex-vertical;
+
+    padding-top: 20px;
+  }
+
+  .upload__image {
+    margin-bottom: 40px;
+  }
+
+  .upload__option {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .upload__option-item {
+    flex-basis: 54px;
+
+    &:last-child {
+      flex-grow: 1;
+
+      margin-top: 20px;
+    }
+  }
+
+  .upload__option-btn {
+    @include button-reset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -9,70 +9,81 @@
     background-repeat: no-repeat;
   }
 
-  .intro__inner {
-   @include flex-vertical;
+  &--bg-photo {
+    height: 168px;
 
-    padding-top: 23px;
+    background-color: $primary-blue;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: 0 -69px;
+    background-repeat: no-repeat;
   }
 
-  .intro__slogan {
-    margin: 0;
-    margin-bottom: 32px;
+}
 
-    width: 255px;
+.intro__inner {
+ @include flex-vertical;
 
-    color: $main-white;
-    line-height: 26px;
-    font-size: 24px;
-    text-align: center;
-  }
+  padding-top: 30px;
+}
 
-  .intro__picture {
-    width: 100%;
-    min-height: 288px;
-  }
+.intro__slogan {
+  margin: 0;
+  margin-bottom: 32px;
 
-  .intro__text {
-    margin: 0;
+  width: 255px;
 
-    width:  255px;
+  color: $main-white;
+  line-height: 26px;
+  font-size: 24px;
+  text-align: center;
+}
 
-    color: $main-white;
-    line-height:  27px;
-    font-size: 14px;
-    text-align: center;
-  }
+.intro__picture {
+  width: 100%;
+  min-height: 288px;
+}
 
-  .intro__download-block {
-    @include flex-vertical;
+.intro__text {
+  margin: 0;
 
-    width: 280px;
-    padding-top: 27px;
-  }
+  width:  255px;
 
-  .intro__btn {
-    @include button-reset;
+  color: $main-white;
+  line-height:  27px;
+  font-size: 14px;
+  text-align: center;
+}
 
-    width: 100%;
-    height: 55px;
+.intro__download-block {
+  @include flex-vertical;
 
-    color: $main-white;
-    border: solid 2px $main-white;
-    border-radius: 30px;
+  width: 280px;
+  padding-top: 27px;
+}
 
-    color: $main-white;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: bold;
+.intro__btn {
+  @include button-reset;
 
-    &:hover,
-    &:focus {
-      color: $primary-pink;
-      background-color: $main-white;
-    }
-  }
+  width: 100%;
+  height: 55px;
 
-  .intro__brands {
-    width:  100%;
+  color: $main-white;
+  border: solid 2px $main-white;
+  border-radius: 30px;
+
+  color: $main-white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $primary-pink;
+    background-color: $main-white;
   }
 }
+
+.intro__brands {
+  width:  100%;
+}
+

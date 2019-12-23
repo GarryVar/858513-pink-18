@@ -3,6 +3,7 @@
   &--bg-gradient {
     background: linear-gradient(175deg, white 80%, #f2f2f2 10%);
   }
+}
 
   .review__inner {
     padding-top: 45px;
@@ -51,6 +52,5 @@
     @include button-reset;
     @include slider-options;
   }
-}
 
 

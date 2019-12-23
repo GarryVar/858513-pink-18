@@ -1,29 +1,28 @@
-.site-list {
+.site-list__item {
+  @include flex-vertical;
 
-  .site-list__item {
-    @include flex-vertical;
+  padding-top: 19px;
+  padding-bottom: 19px;
 
-    padding-top: 19px;
-    padding-bottom: 19px;
+  width: 100%;
 
-    justify-content: center;
+  justify-content: center;
 
-    max-height: 62px;
-    border-top: solid 1px #485461;
-    border-bottom: solid 1px #000000;
-  }
+  max-height: 62px;
+  border-top: solid 1px #485461;
+  border-bottom: solid 1px #000000;
+}
 
-  .site-list__link {
-    @include link-reset;
+.site-list__link {
+  @include link-reset;
 
-    color: $main-white;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: $main-white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
 
-      &:hover,
-      &:focus {
-        color: $primary-pink;
-      }
+    &:hover,
+    &:focus {
+      color: $primary-pink;
     }
 }

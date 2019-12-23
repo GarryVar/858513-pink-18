@@ -4,6 +4,8 @@
     background: linear-gradient(174deg, white 23%, #f2f2f2 10%);
   }
 
+}
+
   .features__inner {
     @include flex-vertical;
 
@@ -59,4 +61,3 @@
 
     top: 8px;
   }
-}
