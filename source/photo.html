@@ -4,36 +4,64 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d22856">
+    <meta name="msapplication-TileColor" content="#d22856">
+    <meta name="theme-color" content="#d22856">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+      .page-header__link:hover svg,
+      .page-header__toggle--close:focus svg {
+        color: #d22856;
+      }
 
+      .page-header__link:active svg {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .page-header__toggle--close:hover svg,
+      .page-header__toggle--close:focus svg {
+        color: #d22856;
+      }
+
+      .page-header__toggle--close:active svg {
+        color: #d22856a8;
+      }
+
+      .upload__option-btn:hover svg,
+      .upload__option-btn:focus svg {
+        fill: #8d949b;
+      }
+    </style>
+  </head>
   <body class="page-index">
 
-    <header class="page-header">
-      <div class="page-header__wrap">
-
+    <header class="page-header page-header--bg-blue">
+      <div class="page-header__inner">
         <a class="page-header__link" href="index.html">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859">
-            <g fill="#FFF">
-              <path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0148.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g>
+          Логотип Pink
+          <svg width="74" height="22" color="#ffffff">
+            <use xlink:href="img/logo-pink-white-mobile.svg#logo-mobile"></use>
           </svg>
         </a>
-
-        <button class="page-header--toggle" type="button">
+        <button class="page-header__toggle page-header__toggle--close" type="button">
           <span class="visually-hidden">Навигационное меню</span>
-          <svg width="23.867" height="23.867">
-            <path fill="#FFF" d="M15.087 11.933l8.56-8.559a.75.75 0 000-1.061L21.554.22a.747.747 0 00-1.06 0l-8.561 8.56L3.373.22a.771.771 0 00-1.061 0L.22 2.313a.75.75 0 000 1.061l8.56 8.559-8.56 8.559a.751.751 0 000 1.062l2.093 2.094a.744.744 0 001.06 0l8.561-8.56 8.56 8.56a.746.746 0 001.06 0l2.093-2.094a.751.751 0 000-1.062l-8.56-8.559z"/>
+          <svg width="23" height="23" color="#ffffff">
+            <use xlink:href="img/icon-menu-cross.svg#close-btn"></use>
           </svg>
         </button>
 
         <nav class="main-nav page-header__main-nav">
           <ul class="site-list main-nav__site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="index.html">главная</a>
+              <a class="site-list__link site-list__link--current" href="index.html">главная</a>
             </li>
 
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">фотографии</a>
+              <a class="site-list__link">фотографии</a>
             </li>
 
             <li class="site-list__item">
@@ -41,7 +69,7 @@
             </li>
 
             <li class="site-list__item">
-              <a class="site-list__link" href="#">html academy</a>
+              <a class="site-list__link" href="">html academy</a>
             </li>
           </ul>
         </nav>
@@ -49,141 +77,191 @@
     </header>
 
     <main class="main">
-      <div class="intro intro--photo">
-        <div class="intro__wrap">
-          <p class="intro__slogan">Фотографии <br> пользователей</p>
-          <div class="intro__legend">
-            <p>Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+      <div class="intro intro--bg-photo">
+        <div class="wrapper">
+          <div class="intro__inner">
+          <p class="intro__slogan">Фотографии пользователей</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <div class="wrapper">
+          <div class="legend__inner">
+              <p class="legend__text">Взгляните на фотографии, которые выкладывают пользователи! Видите,как&nbsp;не&nbsp;хватает ваших?</p>
           </div>
         </div>
       </div>
 
       <section class="photo">
         <h2 class="visually-hidden">Фотографии наших пользователей</h2>
-        <ol class="user photo__user">
+        <ol class="photo__user">
+          <li class="photo__user-item photo__user-item--sign">
+            <img class="photo__user-panorama"
+                src="img/panorama-mobile@1x.jpg"
+                alt="Панорама с высокого моста"
+                width="320"
+                height="137">
 
-          <li class="user__item user__item--sign">
-            <img class="user__img" src="img/panorama-mobile@1x.jpg" alt="Панорама с высокого моста" width="320" height="137">
-            <div class="container">
-              <div class="user__block">
-              <h3 class="user__name">Анна</h3>
-              <span class="user__time">(5 минут назад)</span>
-              <p class="user__comment">Прыгать или нет? Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <span class="user__like">Нравиться:215</span>
+            <div class="wrapper">
+              <div class="photo__user-block user__block--bg-gray">
+                <h3 class="photo__user-name">Анна</h3>
+                <span class="photo__user-time">(5 минут назад)</span>
+                <p class="photo__user-comment">Прыгать или нет? Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <span class="photo__user-like">Нравиться:215</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-car-mobile@1x.jpg" alt="Камера на на штативе снимает белую машину" width="280" height="180">
-              <div class="user__block">
-                <h3 class="user__name">Левон</h3>
-                <span class="user__time">(5 часов назад)</span>
-                <p class="user__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="user__like">Нравиться:356</span>
+
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-car-mobile@1x.jpg"
+                  alt="Камера на на штативе снимает белую машину"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Левон</h3>
+                <span class="photo__user-time">(5 часов назад)</span>
+                <p class="photo__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="photo__user-like">Нравиться:356</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-drumset-mobile@1x.jpg" alt="Новая барабанная кухня" width="280" height="180">
 
-              <div class="user__block">
-                <h3 class="user__name">Антон</h3>
-                <span class="user__time">(12 часов назад)</span>
-                <p class="user__comment">Соседи будут рады!</p>
-                <span class="user__like">Нравиться:666</span>
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-drumset-mobile@1x.jpg"
+                  alt="Новая барабанная кухня"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Антон</h3>
+                <span class="photo__user-time">(12 часов назад)</span>
+                <p class="photo__user-comment">Соседи будут рады!</p>
+                <span class="photo__user-like">Нравиться:666</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-window-mobile@1x.jpg" alt="Стеклянный потолок в небоскребе" width="280" height="180">
 
-              <div class="user__block">
-                <h3 class="user__name">Борис</h3>
-                <span class="user__time">(20 часов назад)</span>
-                <p class="user__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
-                <span class="user__like">Нравиться:215</span>
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-window-mobile@1x.jpg"
+                  alt="Стеклянный потолок в небоскребе"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Борис</h3>
+                <span class="photo__user-time">(20 часов назад)</span>
+                <p class="photo__user-comment">Здесь могла быть ваша цитата о высоком и вечном</p>
+                <span class="photo__user-like">Нравиться:215</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская ярмарка под шатром" width="280" height="180">
 
-              <div class="user__block">
-              <h3 class="user__name">Сергей</h3>
-              <span class="user__time">(25 часов назад)</span>
-              <p class="user__comment">Самая кубанская в мире</p>
-              <span class="user__like">Нравиться:4</span>
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-fair-mobile@1x.jpg"
+                  alt="Кубанская ярмарка под шатром"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Сергей</h3>
+                <span class="photo__user-time">(25 часов назад)</span>
+                <p class="photo__user-comment">Самая кубанская в мире</p>
+                <span class="photo__user-like">Нравиться:4</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-pov-mobile@1x.jpg" alt="Фотография с горы в ущелье" width="280" height="180">
 
-              <div class="user__block">
-              <h3 class="user__name">Максим</h3>
-              <span class="user__time">(40 часов назад)</span>
-              <p class="user__comment">Где снег-то?</p>
-              <span class="user__like">Нравиться:150</span>
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-pov-mobile@1x.jpg"
+                  alt="Фотография с горы в ущелье"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Максим</h3>
+                <span class="photo__user-time">(40 часов назад)</span>
+                <p class="photo__user-comment">Где снег-то?</p>
+                <span class="photo__user-like">Нравиться:150</span>
               </div>
             </div>
           </li>
 
-          <li class="user__item">
-            <div class="container">
-              <img class="user__img" src="img/photo-wing-mobile@1x.jpg" alt="Крыло летящего самолета с иллюминатора" width="280" height="180">
 
-              <div class="user__block">
-              <h3 class="user__name">Надежда</h3>
-              <span class="user__time">(45 часов назад)</span>
-              <p class="user__comment">Всем GM и взаимные лайки!</p>
-              <span class="user__like">Нравиться:2560</span>
+          <li class="photo__user-item">
+            <div class="wrapper">
+              <img class="photo__user-image"
+                  src="img/photo-wing-mobile@1x.jpg"
+                  alt="Крыло летящего самолета с иллюминатора"
+                  width="280"
+                  height="180">
+
+              <div class="photo__user-block">
+                <h3 class="photo__user-name">Надежда</h3>
+                <span class="photo__user-time">(45 часов назад)</span>
+                <p class="photo__user-comment">Всем GM и взаимные лайки!</p>
+                <span class="photo__user-like">Нравиться:2560</span>
               </div>
             </div>
           </li>
         </ol>
+      </section>
 
-        <p class="photo__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="legend">
+        <div class="wrapper">
+          <div class="legend__inner">
+            <p class="legend__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="upload photo__upload">
-          <div class="container">
-            <div class="upload__img">
-              <img class="upload__pic" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога в лесу на закате" width="280" height="374">
+      <section class="upload upload--bg-gray">
+        <div class="wrapper">
+          <div class="upload__inner">
+            <div class="upload__image">
+              <img class="upload__pic"
+                  src="img/photo-road-mobile@1x.jpg"
+                  alt="Зимняя дорога в лесу на закате"
+                  width="280"
+                  height="374">
             </div>
-
             <ol class="upload__option">
               <li class="upload__option-item">
-                <button class="upload__crop" type="button">Обрезать
-                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                    <path fill="none" d="M0 0h48v48H0V0z"/>
-                    <path class="svg" fill="#b5b9be" d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+                <button class="upload__option-btn" type="button">Обрезать
+                  <svg width="48" height="48" fill="#d22856">
+                    <use xlink:href="img/icon-editor-crop.svg#crop"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="upload__option-item">
-                <button class="upload__bucket" type="button">Залить цветом
-                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                    <path fill="none" d="M0 0h48v48H0V0z"/>
-                    <path class="svg" fill="#b5b9be" d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+                <button class="upload__option-btn" type="button">Залить цветом
+                  <svg width="48" height="48" fill="#d22856">
+                    <use xlink:href="img/icon-editor-fill.svg#fill"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="upload__option-item">
-                <button class="upload__brightness" type="button">Яркость
-                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92">
-                    <path class="svg"  fill="#b5b9be" d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
-                    <path class="svg" fill="#b5b9be" d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/>
+                <button class="upload__option-btn" type="button">Яркость
+                  <svg width="35" height="31" fill="#d22856">
+                    <use xlink:href="img/icon-editor-contrast.svg#contrast"></use>
                   </svg>
                 </button>
               </li>
@@ -194,7 +272,6 @@
                 </label>
               </li>
             </ol>
-
             <ul class="post upload__post">
               <li class="post__item">
                 <button class="button post__btn post__btn--upload" type="button">Запостить</button>
@@ -207,11 +284,12 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="main-footer ">
       <h2 class="visually-hidden">Дополнительная информация о нас</h2>
-      <div class="main-footer__wrap">
+      <div class="main-footer__inner">
         <div class="main-footer__logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375">
             <g fill="#283645">
