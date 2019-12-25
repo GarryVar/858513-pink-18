@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: lighter;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-color: $primary-pink;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  min-width: 320px;
+  min-height: 100vh;
+
+  color: $text-color;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $font-stack;
+
+  background-color: $main-white;
+}
+
+.page-index {
+  position: relative;
+
+  margin: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: none;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
