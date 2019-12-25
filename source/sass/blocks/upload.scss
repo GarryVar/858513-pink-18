@@ -17,7 +17,6 @@
 
     background-color: $gray-border;
   }
-
 }
 
 .upload__inner {
@@ -89,9 +88,9 @@
 
   transform: translateY(-50%);
 
-    &:active {
-      background-color: $primary-pink;
-    }
+  &:active {
+    background-color: $primary-pink;
+  }
 }
 
 .upload__post {
@@ -161,4 +160,3 @@
     }
   }
 }
-

@@ -1,5 +1,4 @@
 .intro {
-
   &--bg-image {
     min-height: 667px;
 
@@ -17,11 +16,10 @@
     background-position: 0 -69px;
     background-repeat: no-repeat;
   }
-
 }
 
 .intro__inner {
- @include flex-vertical;
+  @include flex-vertical;
 
   padding-top: 30px;
 }
@@ -46,10 +44,10 @@
 .intro__text {
   margin: 0;
 
-  width:  255px;
+  width: 255px;
 
   color: $main-white;
-  line-height:  27px;
+  line-height: 27px;
   font-size: 14px;
   text-align: center;
 }
@@ -68,13 +66,12 @@
   height: 55px;
 
   color: $main-white;
-  border: solid 2px $main-white;
-  border-radius: 30px;
-
-  color: $main-white;
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: bold;
+
+  border-radius: 30px;
+  border: solid 2px $main-white;
 
   &:hover,
   &:focus {
@@ -84,6 +81,5 @@
 }
 
 .intro__brands {
-  width:  100%;
+  width: 100%;
 }
-

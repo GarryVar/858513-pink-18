@@ -1,5 +1,4 @@
 .review {
-
   &--bg-gradient {
     background: linear-gradient(175deg, white 80%, #f2f2f2 10%);
   }
@@ -45,12 +44,10 @@
 }
 
 .review__toggles {
- @include slider;
+  @include slider;
 }
 
 .review__toggle {
   @include button-reset;
   @include slider-options;
 }
-
-

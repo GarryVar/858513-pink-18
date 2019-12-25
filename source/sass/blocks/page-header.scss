@@ -1,5 +1,4 @@
 .page-header {
-
   &--bg-blue {
     background-color: $primary-blue;
   }
@@ -13,20 +12,19 @@
   justify-content: space-between;
 
   padding-top: 15px;
-  // padding-bottom: 20px;
 
   min-height: 72px;
   max-height: 325px;
 }
 
 .page-header__link {
-    display: flex;
-    align-items: center;
-    flex-basis:   50%;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
 
-    margin-left: 20px;
+  margin-left: 20px;
 
-    font-size: 0;
+  font-size: 0;
 }
 
 .page-header__toggle {
@@ -38,8 +36,7 @@
   width: 36px;
   height: 36px;
 
-
-  background-color:   transparent;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
