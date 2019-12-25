@@ -1,0 +1,162 @@
+.upload {
+  position: relative;
+
+  &--bg-gray {
+    background-color: $bg-color;
+  }
+
+  &--border-separate::before {
+    position: absolute;
+    content: "";
+
+    top: 546px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $gray-border;
+  }
+}
+
+.upload__inner {
+  @include flex-vertical;
+
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.upload__image {
+  margin-bottom: 32px;
+}
+
+.upload__option {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: center;
+  justify-content: space-evenly;
+
+  padding-bottom: 34px;
+}
+
+.upload__option-item {
+  flex-basis: 54px;
+
+  &:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:last-child {
+    flex-basis: 240px;
+
+    margin-top: 37px;
+  }
+}
+
+.upload__option-btn {
+  @include button-reset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload__option-range {
+  position: relative;
+
+  width: 240px;
+  height: 2px;
+
+  background-color: $primary-dark-blue;
+
+  cursor: pointer;
+}
+
+.upload__option-control {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: $main-white;
+  border: solid 2px $primary-pink;
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+
+  &:active {
+    background-color: $primary-pink;
+  }
+}
+
+.upload__post {
+  @include list-reset;
+  @include flex-vertical;
+
+  padding-top: 40px;
+
+  width: 100%;
+}
+
+.upload__post-item {
+  width: 100%;
+}
+
+.upload__post-btn {
+  @include button-reset;
+
+  width: 100%;
+  height: 50px;
+
+  border-radius: 23px;
+
+  text-align: center;
+
+  &--post {
+    color: $primary-pink;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: solid 3px $primary-pink;
+
+    &:hover,
+    &:focus {
+      color: $main-white;
+      background-color: $primary-pink;
+    }
+
+    &:active {
+      color: $main-white-opacity;
+    }
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--cancel {
+    color: $gray-border;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: solid 3px $gray-border;
+
+    &:hover,
+    &:focus {
+      color: $main-dark-gray;
+      border-color: $main-dark-gray;
+    }
+
+    &:active {
+      color: $main-white-opacity;
+      border-color: $main-dark-gray;
+      background-color: $main-dark-gray;
+    }
+  }
+}

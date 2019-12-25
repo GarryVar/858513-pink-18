@@ -1,0 +1,53 @@
+.review {
+  &--bg-gradient {
+    background: linear-gradient(175deg, white 80%, #f2f2f2 10%);
+  }
+}
+
+.review__inner {
+  padding-top: 45px;
+
+  min-height: 398px;
+}
+
+.review__list {
+  @include list-reset;
+
+  margin-bottom: 33px;
+
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+.review__list-item {
+  margin-right: 40px;
+
+  min-width: 100%;
+}
+
+.review__list-header {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+.review__list-text {
+  margin: 0;
+
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.review__toggles {
+  @include slider;
+}
+
+.review__toggle {
+  @include button-reset;
+  @include slider-options;
+}
