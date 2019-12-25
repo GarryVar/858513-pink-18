@@ -1,63 +1,61 @@
 .features {
-
   &--bg-gradient {
     background: linear-gradient(174deg, white 23%, #f2f2f2 10%);
   }
-
 }
 
-  .features__inner {
-    @include flex-vertical;
+.features__inner {
+  @include flex-vertical;
 
-    padding-top: 40px;
-  }
+  padding-top: 40px;
+}
 
-  .features__slogan {
-    margin: 0;
-    margin-bottom: 31px;
+.features__slogan {
+  margin: 0;
+  margin-bottom: 31px;
 
-    width:  234px;
+  width:  234px;
 
-    line-height:  27px;
-    font-size: 24px;
-    text-align: center;
-  }
+  line-height:  27px;
+  font-size: 24px;
+  text-align: center;
+}
 
-  .features__list {
-    @include list-reset;
+.features__list {
+  @include list-reset;
 
-    padding-top: 86px;
-  }
+  padding-top: 86px;
+}
 
-  .features__list-header {
-    margin: 0;
-    margin-bottom: 12px;
-    font-size: 18px;
-    text-align: center;
-  }
+.features__list-header {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+}
 
-  .features__list-text {
-    margin: 0;
-    margin-bottom: 31px;
-    width: 245px;
+.features__list-text {
+  margin: 0;
+  margin-bottom: 31px;
+  width: 245px;
 
-    font-size: 14px;
-    text-align: center;
-  }
+  font-size: 14px;
+  text-align: center;
+}
 
-  .features__picture {
-    @include flex-vertical;
-    position: relative;
+.features__picture {
+  @include flex-vertical;
+  position: relative;
 
 
-    width: 100%;
-    min-height: 286px;
+  width: 100%;
+  min-height: 286px;
 
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
-  .features__img {
-    @include transform-center;
+.features__img {
+  @include transform-center;
 
-    top: 8px;
-  }
+  top: 8px;
+}

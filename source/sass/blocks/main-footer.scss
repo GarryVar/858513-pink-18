@@ -1,0 +1,9 @@
+.main-footer__inner {
+  @include flex-vertical;
+
+  padding-top: 46px;
+}
+
+.main-footer__logo {
+  margin-bottom: 38px;
+}
