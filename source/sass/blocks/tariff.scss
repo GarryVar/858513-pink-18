@@ -1,94 +1,91 @@
 .tariff {
-
   &--bg-gray {
     background-color: $bg-color;
   }
 }
 
-  .tariff__inner {
-    @include flex-vertical;
+.tariff__inner {
+  @include flex-vertical;
 
-    padding-bottom: 40px;
-    min-height: 340px;
-  }
+  padding-bottom: 40px;
+  min-height: 340px;
+}
 
-  .tariff__price-list {
-    @include list-reset;
+.tariff__price-list {
+  @include list-reset;
 
-    margin-bottom: 43px;
+  margin-bottom: 43px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    width: 100%;
+  width: 100%;
 
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
-  .tariff__price-list-item {
-    @include flex-vertical;
+.tariff__price-list-item {
+  @include flex-vertical;
 
-    border-left: solid 1px $gray-border;
-    border-right: solid 1px $gray-border;
-  }
+  border-left: solid 1px $gray-border;
+  border-right: solid 1px $gray-border;
+}
 
-  .tariff__price-list-caption {
-    padding-top: 20px;
-    width: 100%;
-    background-color: $primary-dark-blue;
-  }
+.tariff__price-list-caption {
+  padding-top: 20px;
+  width: 100%;
+  background-color: $primary-dark-blue;
+}
 
-  .tariff__price-list-header {
-    margin: 0;
-    margin-bottom: 7px;
+.tariff__price-list-header {
+  margin: 0;
+  margin-bottom: 7px;
 
-    width: 100%;
+  width: 100%;
 
-    color: $main-white;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+  color: $main-white;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  .tariff__price-list-cost {
-    margin: 0;
-    margin-bottom: 20px;
+.tariff__price-list-cost {
+  margin: 0;
+  margin-bottom: 20px;
 
-    color: $main-white;
-    font-size: 24px;
-    font-weight: lighter;
-    text-align: center;
-    text-transform: uppercase;
-  }
+  color: $main-white;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  .tariff__advantage {
-    @include list-reset;
-    @include flex-vertical;
+.tariff__advantage {
+  @include list-reset;
+  @include flex-vertical;
 
-    width: 100%;
+  width: 100%;
 
-    background-color: $main-white;
-  }
+  background-color: $main-white;
+}
 
-  .tariff__advantage-item {
-    display: flex;
-    align-items: center;
+.tariff__advantage-item {
+  display: flex;
+  align-items: center;
 
-    width: 240px;
-    min-height: 59px;
+  width: 240px;
+  min-height: 59px;
 
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: solid 2px $gray-border;
+}
 
-   border-bottom: solid 2px $gray-border;
-  }
+.tariff__toggles {
+  @include slider;
+}
 
-  .tariff__toggles {
-    @include slider;
-  }
-
-  .tariff__toggle {
-    @include button-reset;
-    @include slider-options;
-  }
-
+.tariff__toggle {
+  @include button-reset;
+  @include slider-options;
+}
