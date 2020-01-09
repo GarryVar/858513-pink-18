@@ -1,0 +1,24 @@
+.user-emotion__title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  color: $primary-pink;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-emotion__row {
+  margin: 0;
+}
+
+.user-emotion__textarea {
+  padding-top: 20px;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  border: solid 2px $gray-border;
+  font-family: inherit;
+}
