@@ -1,0 +1,49 @@
+.user-contact__row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding-top: 40px;
+
+  &:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.user-contact__label {
+  margin-bottom: 15px;
+  padding-left: 23px;
+  width: 100%;
+
+  color: $primary-pink;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.user-contact__input {
+  padding-left: 20px;
+  width: 100%;
+  height: 60px;
+
+  border: solid 2px $gray-border;
+  border-radius: 2px;
+
+  font-family: inherit;
+  font-size: 18px;
+  color: $primary-blue;
+
+  cursor: pointer;
+
+  &::placeholder {
+    color: $primary-blue;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-blue;
+  }
+
+  &:active {
+    border-color: $primary-pink;
+  }
+}
