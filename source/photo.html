@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#d22856">
     <link rel="stylesheet" href="/css/style.css">
     <style>
-      .page-header__link:hover svg,
+    .page-header__link:hover svg,
       .page-header__toggle--close:focus svg {
         color: #d22856;
       }
@@ -36,13 +36,23 @@
         fill: #8d949b;
       }
 
-      .copyright__link:hover svg,
-      .copyright__link:focus svg {
-        color: #1d2631;
+      .social__list-link svg {
+        color: #d22856;
       }
 
-      .copyright__link:active svg {
-        color: #b5b9be;
+      .social__list-link:active svg {
+        color: #d22856a8;
+      }
+
+      .copyright__link svg {
+        color: #d22856;
+      }
+
+      .copyright__link:hover svg {
+        color: #283645;
+
+      }.copyright__link:active svg {
+        color: #e5e5e5;
       }
     </style>
   </head>
@@ -113,7 +123,7 @@
                 height="137">
 
             <div class="wrapper">
-              <div class="photo__user-block photo__user-block--bg-gray">
+              <div class="photo__user-block user__block--bg-gray">
                 <h3 class="photo__user-name">Анна</h3>
                 <span class="photo__user-time">(5 минут назад)</span>
                 <p class="photo__user-comment">Прыгать или нет? Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -235,12 +245,12 @@
       <div class="legend">
         <div class="wrapper">
           <div class="legend__inner">
-            <p class="legend__text">Затмите их всех!<br>Выкладывай все, что накопилосьв телефоне!</p>
+            <p class="legend__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </div>
       </div>
 
-      <section class="upload upload--bg-gray upload--border-separate">
+      <section class="upload upload--bg-gray upload--border">
         <div class="wrapper">
           <div class="upload__inner">
             <div class="upload__image">
@@ -276,18 +286,18 @@
               </li>
 
               <li class="upload__option-item">
-                <div class="upload__option-range" tabindex="0">
-                  <div class="upload__option-control" tabindex="0"></div>
+                <div class="upload__range">
+                  <button class="upload__range-option" type="button"></button>
                 </div>
               </li>
             </ol>
             <ul class="upload__post">
               <li class="upload__post-item">
-                <button class="upload__post-btn upload__post-btn--post" type="button">Запостить</button>
+                <button class="upload__btn upload__btn--publish" type="button">Запостить</button>
               </li>
 
               <li class="upload__post-item">
-                <button class="upload__post-btn upload__post-btn--cancel" type="button">Отмена</button>
+                <button class="upload__btn upload__btn--cancel" type="button">Отмена</button>
               </li>
             </ul>
           </div>
@@ -295,8 +305,7 @@
       </section>
 
     </main>
-
-    <footer class="main-footer ">
+      <footer class="main-footer ">
       <h2 class="visually-hidden">Дополнительная информация о нас</h2>
       <div class="wrapper">
         <div class="main-footer__inner">
@@ -308,27 +317,30 @@
               <path fill="#D22856" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 100 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 100-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531s-8.18-3.259-8.896-7.531c-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/>
             </svg>
           </div>
+
           <div class="social">
             <ul class="social__list">
               <li class="social__list-item">
-                <a class="social__list-link social-list__link--twitter" href="#">twitter
-                  <svg color="#d22856" width="17" height="14">
+                <a class="social__list-link social__list-link--twitter" href="#">twitter
+                  <svg width="20" height="20">
                     <use xlink:href="img/icon-twitter.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
 
+
               <li class="social__list-item">
-                <a class="social__list-link social-list__link--facebook" href="#">facebook
-                    <svg color="#d22856" width="8" height="18">
-                      <use xlink:href="img/icon-facebook.svg#facebook"></use>
-                    </svg>
+                <a class="social__list-link social__list-link--facebook" href="#">facebook
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icon-facebook.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
 
+
               <li class="social__list-item">
-                <a class="social__list-link social-list__link--youtube" href="#">youtube
-                  <svg color="#d22856" width="14" height="13">
+                <a class="social__list-link social__list-link--youtube" href="#">youtube
+                  <svg width="15" height="15">
                     <use xlink:href="img/icon-youtube.svg#youtube"></use>
                   </svg>
                 </a>
@@ -336,19 +348,16 @@
             </ul>
           </div>
 
-          <div class="copyright">
-            <div class="copyright__inner">
-              <span class="copyright__text">Разработано</span>
-              <a class="copyright__link" href="#">htmlacademy
-              <svg color="#d22856" width="27" height="34">
-                <use xlink:href="img/logo-htmlacademy.svg#htmlacademy"></use>
+          <div class="copyright main-footer__copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="#">htmlacademy
+              <svg width="40" height="40">
+                <use xlink:href="img/logo-htmlacademy.svg#academy"></use>
               </svg>
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
