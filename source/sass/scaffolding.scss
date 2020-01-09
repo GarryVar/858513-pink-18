@@ -34,8 +34,8 @@ html {
 
 *:focus {
   outline-offset: 2px;
-  outline-style: dotted;
-  outline-color: lightblue;
+  outline-style: dashed;
+  outline-color: $primary-pink;
 }
 
 body {
