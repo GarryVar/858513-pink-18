@@ -250,7 +250,7 @@
         </div>
       </div>
 
-      <section class="upload upload--bg-gray">
+      <section class="upload upload--bg-gray upload--border">
         <div class="wrapper">
           <div class="upload__inner">
             <div class="upload__image">
@@ -286,18 +286,18 @@
               </li>
 
               <li class="upload__option-item">
-                <label>
-                  <input class="upload__range" type="range">
-                </label>
+                <div class="upload__range">
+                  <button class="upload__range-option" type="button"></button>
+                </div>
               </li>
             </ol>
-            <ul class="post upload__post">
-              <li class="post__item">
-                <button class="button post__btn post__btn--upload" type="button">Запостить</button>
+            <ul class="upload__post">
+              <li class="upload__post-item">
+                <button class="upload__btn upload__btn--publish" type="button">Запостить</button>
               </li>
 
-              <li class="post__item">
-                <button class="button post__btn post__btn--cancel" type="button">Отмена</button>
+              <li class="upload__post-item">
+                <button class="upload__btn upload__btn--cancel" type="button">Отмена</button>
               </li>
             </ul>
           </div>
@@ -331,9 +331,9 @@
 
               <li class="social__list-item">
                 <a class="social__list-link social__list-link--facebook" href="#">facebook
-                <svg width="20" height="20">
-                   <use xlink:href="img/icon-facebook.svg#facebook"></use>
-                 </svg>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icon-facebook.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
 
